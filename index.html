@@ -49,15 +49,15 @@
 
       <nav id="nav-wrap" class="opaque">
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'Show']);">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'Hide']);">Hide navigation</a>
 
          <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#footer">Contact</a></li>
+            <li class="current"><a class="smoothscroll" href="#home" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'Home']);">Home</a></li>
+            <li><a class="smoothscroll" href="#about" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'About']);">About</a></li>
+	        <li><a class="smoothscroll" href="#resume" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'Resume']);">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'Works']);">Works</a></li>
+            <li><a class="smoothscroll" href="#footer" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'Contact']);">Contact</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -65,20 +65,20 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Álvaro González Álvarez</h1>
-            <h3>I'm an IBM WebSphere Commerce and Java <span>Senior Software Developer</span> from Jerez de la Frontera (Spain) interested in both <span>Front End</span> and <span>Back End</span> web application development. Let's <a class="smoothscroll" href="#about">start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <h3>I'm an IBM WebSphere Commerce and Java <span>Senior Software Developer</span> from Jerez de la Frontera (Spain) interested in both <span>Front End</span> and <span>Back End</span> web application development. Let's <a class="smoothscroll" href="#about" onClick="_gaq.push(['_trackEvent', 'Scroll', 'Click', 'Start Scrolling']);">start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about" onClick="_gaq.push(['_trackEvent', 'Scroll', 'Click', 'About Me']);">about me</a>.</h3>
             <hr />
             <ul class="social">
-               <li><a href="http://google.com/+alvarogonzalezalvarez/about" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="https://es.linkedin.com/in/alvarogonzalezalvarez" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/alvarogonzalezalvarez" target="_blank"><i class="fa fa-github"></i></a></li>
-               <li><a href="https://twitter.com/alvaro_gzz" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="http://google.com/+alvarogonzalezalvarez/about" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Google+']);"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://es.linkedin.com/in/alvarogonzalezalvarez" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Linkedin']);"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/alvarogonzalezalvarez" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Github']);"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://twitter.com/alvaro_gzz" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Twitter']);"><i class="fa fa-twitter"></i></a></li>
             </ul>
          </div>
       </div>
 
       <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+         <a class="smoothscroll" href="#about" onClick="_gaq.push(['_trackEvent', 'Scroll', 'Click', 'Down']);"><i class="icon-down-circle"></i></a>
       </p>
 
    </header> <!-- Header End -->
@@ -302,7 +302,7 @@
           	   <div class="columns portfolio-item" style="display: inline-block;float: none;">
                   <div class="item-wrap">
 
-                     <a href="#modal-01" title="">
+                     <a href="#modal-01" title="" onClick="_gaq.push(['_trackEvent', 'Popup', 'Open', 'Feina']);">
                         <img alt="" src="images/portfolio/feinaactiva.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
@@ -319,7 +319,7 @@
                <div class="columns portfolio-item" style="display: inline-block;float: none;">
                   <div class="item-wrap">
 
-                     <a href="#modal-02" title="">
+                     <a href="#modal-02" title="" onClick="_gaq.push(['_trackEvent', 'Popup', 'Open', 'Haburi']);">
                         <img alt="" src="images/portfolio/haburi.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
@@ -352,8 +352,8 @@
 		      </div>
 
             <div class="link-box">
-               <a href="https://feinaactiva.gencat.cat/web/guest/home" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+               <a href="https://feinaactiva.gencat.cat/web/guest/home" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Feina']);">Details</a>
+		         <a class="popup-modal-dismiss" onClick="_gaq.push(['_trackEvent', 'Popup', 'Close', 'Feina']);">Close</a>
             </div>
 
 	      </div><!-- modal-01 End -->
@@ -369,8 +369,8 @@
 		      </div>
 
             <div class="link-box">
-               <a href="http://www.haburi.com/" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+               <a href="http://www.haburi.com/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Haburi']);">Details</a>
+		         <a class="popup-modal-dismiss" onClick="_gaq.push(['_trackEvent', 'Popup', 'Close', 'Haburi']);">Close</a>
             </div>
 
 	      </div><!-- modal-02 End -->
@@ -386,8 +386,8 @@
 		      </div>
 
             <div class="link-box">
-               <a href="http://intern.dress-for-less.de/" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+               <a href="http://intern.dress-for-less.de/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'DFL']);">Details</a>
+		         <a class="popup-modal-dismiss" onClick="_gaq.push(['_trackEvent', 'Popup', 'Close', 'DFL']);">Close</a>
             </div>
 
 	      </div><!-- modal-03 End -->
@@ -407,10 +407,10 @@
          <div class="twelve columns">
 
             <ul class="social-links">
-               <li><a href="http://google.com/+alvarogonzalezalvarez/about" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="https://es.linkedin.com/in/alvarogonzalezalvarez" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/alvarogonzalezalvarez" target="_blank"><i class="fa fa-github"></i></a></li>
-               <li><a href="https://twitter.com/alvaro_gzz" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="http://google.com/+alvarogonzalezalvarez/about" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Google+']);"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://es.linkedin.com/in/alvarogonzalezalvarez" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Linkedin']);"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/alvarogonzalezalvarez" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Github']);"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://twitter.com/alvaro_gzz" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Twitter']);"><i class="fa fa-twitter"></i></a></li>
             </ul>
 
             <ul class="copyright">
@@ -421,7 +421,7 @@
 
          </div>
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home" onClick="_gaq.push(['_trackEvent', 'Scroll', 'Click', 'Up']);"><i class="icon-up-open"></i></a></div>
 
       </div>
 
