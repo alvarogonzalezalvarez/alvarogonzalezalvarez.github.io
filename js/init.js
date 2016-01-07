@@ -162,7 +162,7 @@
 	      },
         error: function(msg) {
           $('#image-loader').fadeOut();
-          $('#message-warning').html(msg.error);
+          $('#message-warning').html(msg.responseJSON.error);
           $('#message-warning').fadeIn();
         }
       });
