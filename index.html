@@ -90,7 +90,7 @@
             <li><a class="smoothscroll" href="#about" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'About']);">About</a></li>
 	         <li><a class="smoothscroll" href="#resume" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'Resume']);">Resume</a></li>
             <li><a class="smoothscroll" href="#portfolio" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'Works']);">Works</a></li>
-            <!-- <li><a class="smoothscroll" href="#footer" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'Contact']);">Contact</a></li>-->
+            <li><a class="smoothscroll" href="#contact" onClick="_gaq.push(['_trackEvent', 'Menu', 'Click', 'Contact']);">Contact</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -98,8 +98,7 @@
       <div class="row banner">
          <div class="banner-text vcard">
             <h1 class="responsive-headline fn">Álvaro González Álvarez</h1>
-            <h3>I'm a <span class="title" style="color:#2B2B2B">WebSphere Commerce, Java and JavaScript <span>Senior Software Developer</span></span> from <span class="adr" style="color:#2B2B2B"><span class="locality" style="color:#2B2B2B">Jerez de la Frontera (Spain)</span></span> interested in both <span>Front End</span> and <span>Back End</span> web application development. Let's <a class="smoothscroll" href="#about" onClick="_gaq.push(['_trackEvent', 'Scroll', 'Click', 'Start Scrolling']);">start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about" onClick="_gaq.push(['_trackEvent', 'Scroll', 'Click', 'About Me']);">about me</a>.</h3>
+            <h3>I'm a <span class="title" style="color:#2B2B2B">WebSphere Commerce, Java and JavaScript <span>Senior Software Developer</span></span> from <span class="adr" style="color:#2B2B2B"><span class="locality" style="color:#2B2B2B">Jerez de la Frontera (Spain)</span></span> interested in both <span>Front End</span> and <span>Back End</span> web application development.</h3>
             <hr />
             <ul class="social">
                <li><a href="http://google.com/+alvarogonzalezalvarez/about" target="_blank" onClick="_gaq.push(['_trackEvent', 'Links', 'Click', 'Google+']);"><i class="fa fa-google-plus"></i></a></li>
@@ -143,6 +142,7 @@
 
                   <h2>Contact Details</h2>
                   <p class="address">
+                     <span>Álvaro González Álvarez</span><br>
                      <span>alvarogonzalezalvarez@outlook.com</span>
 					   </p>
 
@@ -694,6 +694,97 @@
       </div> <!-- row End -->
 
    </section> <!-- Portfolio Section End-->
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">Please feel free to contact me at any time by filling out the form below. You can also connect with me on social media (icons in <a class="smoothscroll" href="#home">Home</a> and <a class="smoothscroll" href="#footer">Footer</a> sections) or send me a direct message.
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="" method="post" id="contactForm" name="contactForm">
+               <fieldset>
+
+                  <div>
+                     <label for="contactName">Name <span class="required">*</span></label>
+                     <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+                     <label for="contactEmail">Email <span class="required">*</span></label>
+                     <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+                     <label for="contactSubject">Subject</label>
+                     <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+               </fieldset>
+               </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error!</div>
+               <!-- contact-success -->
+               <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+               </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+                  <h4>Contact Details</h4>
+                  <p class="address">
+                     Álvaro González Álvarez<br>
+                     <span>alvarogonzalezalvarez@outlook.com</span>
+                  </p>
+
+               </div>
+
+               <div class="widget widget_tweets">
+
+               </div>
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
 
 
    <!-- footer
