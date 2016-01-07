@@ -146,27 +146,33 @@
       var contactSubject = $('#contactForm #contactSubject').val();
       var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
+      if ((!contactName || !contactEmail || !contactMessage) || (contactName=="" || contactEmail=="" || contactMessage=="")) {
+        $('#image-loader').fadeOut();
+        $('#message-warning').html("I need to know your email, your name and the message! :)");
+        $('#message-warning').fadeIn();
+      } else {
+        var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 
-      $.ajax({
-	      url: "http://formspree.io/alvarogonzalezalvarez@outlook.com",
-        method: "POST",
-	      data: data,
-        dataType: "json",
-	      success: function(msg) {
-          $('#image-loader').fadeOut();
-          $('#message-warning').hide();
-          $('#contactForm').fadeOut();
-          $('#message-success').fadeIn();
-	      },
-        error: function(msg) {
-          $('#image-loader').fadeOut();
-          $('#message-warning').html(msg.responseJSON.error);
-          $('#message-warning').fadeIn();
-        }
-      });
-      return false;
+        $.ajax({
+          url: "http://formspree.io/alvarogonzalezalvarez@outlook.com",
+          method: "POST",
+          data: data,
+          dataType: "json",
+          success: function(msg) {
+            $('#image-loader').fadeOut();
+            $('#message-warning').hide();
+            $('#contactForm').fadeOut();
+            $('#message-success').fadeIn();
+          },
+          error: function(msg) {
+            $('#image-loader').fadeOut();
+            $('#message-warning').html(msg.responseJSON.error);
+            $('#message-warning').fadeIn();
+          }
+        });
+        return false;
+      }
    });
 
 
