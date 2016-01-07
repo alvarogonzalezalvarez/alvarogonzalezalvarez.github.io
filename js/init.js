@@ -150,10 +150,10 @@
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 
       $.ajax({
-
-	      type: "POST",
 	      url: "http://formspree.io/alvarogonzalezalvarez@outlook.com",
+        method: "POST",
 	      data: data,
+        dataType: "json",
 	      success: function(msg) {
 
             // Message was sent
