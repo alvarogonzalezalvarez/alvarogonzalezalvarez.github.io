@@ -152,7 +152,7 @@
       $.ajax({
 
 	      type: "POST",
-	      url: "inc/sendEmail.php",
+	      url: "http://formspree.io/alvarogonzalezalvarez@outlook.com",
 	      data: data,
 	      success: function(msg) {
 
@@ -171,7 +171,6 @@
             }
 
 	      }
-
       });
       return false;
    });
