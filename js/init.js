@@ -171,8 +171,8 @@
             $('#message-warning').fadeIn();
           }
         });
-        return false;
       }
+      return false;
    });
 
 
