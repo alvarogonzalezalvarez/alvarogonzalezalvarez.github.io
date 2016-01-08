@@ -155,7 +155,7 @@
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 
         $.ajax({
-          url: "http://formspree.io/alvarogonzalezalvarez@outlook.com",
+          url: "https://formspree.io/alvarogonzalezalvarez@outlook.com",
           method: "POST",
           data: data,
           dataType: "json",
