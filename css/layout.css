@@ -1014,3 +1014,5 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+.ignite-btn { display: inline-block; padding: 15px 15px; color: #2b2b2b; border: solid 1px #2b2b2b; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
+.ignite-btn:hover, .ignite-btn:focus { color: #fff; border: solid 1px #11abb0; background-color: #11abb0;}
