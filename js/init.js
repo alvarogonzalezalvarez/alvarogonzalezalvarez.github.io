@@ -20,16 +20,18 @@
 ------------------------------------------------------ */
 
    $('.smoothscroll').on('click',function (e) {
-	    e.preventDefault();
+	    if (this.id !=== "blog") {
+        e.preventDefault();
 
-	    var target = this.hash,
-	    $target = $(target);
-      if ($target.offset()) {
-        $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-        }, 800, 'swing', function () {
-            window.location.hash = target;
-        });
+        var target = this.hash,
+        $target = $(target);
+        if ($target.offset()) {
+          $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+          }, 800, 'swing', function () {
+              window.location.hash = target;
+          });
+        }
       }
 	});
 
