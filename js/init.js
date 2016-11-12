@@ -20,7 +20,7 @@
 ------------------------------------------------------ */
 
    $('.smoothscroll').on('click',function (e) {
-	    if (this.id !=== "blog") {
+	    if (this.id !== "blog") {
         e.preventDefault();
 
         var target = this.hash,
