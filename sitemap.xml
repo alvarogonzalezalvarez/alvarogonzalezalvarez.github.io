@@ -2,14 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://alvarogonzalezalvarez.com/</loc>
-    <lastmod>2016-01-20T22:04:06+01:00</lastmod>
+    <lastmod>2016-12-19T22:04:06+01:00</lastmod>
   </url>
   <url>
-    <loc>https://alvarogonzalezalvarez.com/blog/</loc>
-    <lastmod>2016-01-20T22:04:06+01:00</lastmod>
-  </url>
-  <url>
-    <loc>https://alvarogonzalezalvarez.com/blog/github-pages-cloudflare-and-google-domains-epic-win/</loc>
-    <lastmod>2016-01-20T22:04:06+01:00</lastmod>
+    <loc>https://alvarogonzalezalvarez.com/es/</loc>
+    <lastmod>2016-12-19T22:04:06+01:00</lastmod>
   </url>
 </urlset>
